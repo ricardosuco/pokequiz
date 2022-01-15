@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="./assets/pokebola.svg">
+    <script src="script.js" defer></script>
+    <title>PokeQuiz</title>
+</head>
+
+<body class="content display-flex">
+    <h1>SCORE ATUAL: <span class="score"></span></h1>
+    <div class="nivel">
+        <label>Fácil
+            <input type="radio" name="nivel" value="151" checked>
+        </label>
+        <label>Normal
+            <input type="radio" name="nivel" value="251">
+        </label>
+        <label>Mestre Pokémon
+            <input type="radio" name="nivel" value="491">
+        </label>
+    </div>
+    <div class="card--principal pokedex font-rubik">
+        <div class="pokedex-top">
+            <img id="luz" src="./assets/botao_azul.svg" alt="">
+        </div>
+        <div class="pokedex-display">
+            <div onclick="exibirModal()" class="img-pokemon">
+                <img src="">
+            </div>
+        </div>
+        <div class="relative-3 display-flex">
+
+            <div class="div--botao border font-rubik">
+                <button class="botao-principal">NEXT</button>
+            </div>
+        </div>
+    </div>
+    <div class="input-resposta">
+        <input id="poke-nome" type="text" placeholder="Responda e Tecle Enter">
+    </div>
+    <div onclick="exibirModal()" class="modal hidden">
+        <div class="modal-img">
+            <img src="">
+        </div>
+    </div>
+</body>
+
+</html>

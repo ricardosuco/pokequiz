@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./assets/bg-pokemon.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+.content h1 {
+    margin-top: 18px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: #FFF;
+
+}
+
+.nivel label {
+    margin-right: 10px;
+    font-family: 'Rubik', sans-serif;
+    color: #FFF;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pokedex {
+    width: 300px;
+    height: 450px;
+    background: url('./assets/Pokedex_maior_branca.svg') no-repeat;
+    background-size: cover;
+
+}
+
+.nome-pokemon {
+    width: 300px;
+    height: 100px;
+}
+
+.div--botao {
+    margin-right: 130px;
+    margin-bottom: 25px;
+}
+
+.div--botao button {
+    width: 100px;
+    height: 50px;
+    background-color: #51AE5F;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    color: #FFF;
+
+}
+
+.div--botao button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+
+}
+
+.pokedex #luz {
+    position: absolute;
+    width: 60px;
+    top: 15px;
+    left: 20px;
+}
+
+.img-pokemon {
+    margin-right: 25px;
+
+}
+
+.img-pokemon img {
+    filter: brightness(0);
+    cursor: pointer;
+    width: 100%;
+}
+
+.pokedex-top {
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+
+.pokedex-display {
+    width: 300px;
+    height: 150px;
+    padding: 10px 75px 10px 60px;
+}
+
+.relative-3 {
+    width: 300px;
+    height: 150px;
+    justify-content: flex-end;
+}
+
+.input-resposta input {
+    font-size: 17px;
+    padding: 10px 14px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.input-resposta input::placeholder {
+    font-size: 14px;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-img {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.hidden {
+    display: none;
+}
