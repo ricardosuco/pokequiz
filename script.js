@@ -13,10 +13,10 @@ let pokemon = ''
 scoreSpan.textContent = score
 
 inputNivel.addEventListener('change', function (event) {
-   nivel = event.target.value
+    nivel = event.target.value
 })
 
-    botaoPrincipal.addEventListener('click', async function () {
+botaoPrincipal.addEventListener('click', async function () {
     inputNome.value = ''
     gerarId(1, nivel)
     try {
@@ -30,7 +30,7 @@ inputNivel.addEventListener('change', function (event) {
     } catch (error) {
         console.error(error)
     }
-    
+
 })
 
 
