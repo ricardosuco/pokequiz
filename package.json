@@ -1,0 +1,23 @@
+{
+  "name": "pokequiz",
+  "version": "1.0.0",
+  "description": "Este projeto consiste em um jogo tipo Quiz o qual é consumido a API do [PokéApi](https://pokeapi.co) para obter a imagem de um Pokémon a partir de um ID aleatório, o usuário deve inserir o nome correto no input, somando 1 ponto a cada acerto ou zerando o score em caso de erro.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardosuco/pokequiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardosuco/pokequiz/issues"
+  },
+  "homepage": "https://github.com/ricardosuco/pokequiz#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0"
+  }
+}
