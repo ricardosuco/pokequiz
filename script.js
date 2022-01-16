@@ -13,7 +13,7 @@ let pokemon = ''
 scoreSpan.textContent = score
 
 inputNivel.addEventListener('change', function (event) {
-    nivel = event.target.value
+   nivel = event.target.value
 })
 
     botaoPrincipal.addEventListener('click', async function () {
@@ -25,27 +25,25 @@ inputNivel.addEventListener('change', function (event) {
         imgPokemon.src = resposta.sprites.front_default
         ledResultado.src = './assets/botao_azul.svg'
         imagemMaior = resposta.sprites.other.dream_world.front_default
-        console.log(resposta.name)
         pokemon = resposta.name
 
     } catch (error) {
         console.error(error)
     }
-    scoreSpan.textContent = score
+    
 })
 
 
 inputNome.addEventListener('change', function () {
     if (pokemon !== inputNome.value.toLowerCase()) {
         ledResultado.src = './assets/botao_vermelho.svg'
-        console.log("errada")
         score = 0
+        scoreSpan.textContent = score
         return
     }
     ledResultado.src = './assets/botao_verde.svg'
-    console.log("Certa")
     score++
-    console.log(score)
+    scoreSpan.textContent = score
     return
 })
 
@@ -58,9 +56,6 @@ function exibirModal() {
     modalImg.src = imagemMaior
 }
 
-
-//Resolver o bug que mostra pokemons repetidos
-//Criar todas as validações do input
 
 
 
